@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+ 
+    <!-- Home Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>  
+   
+    
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition> 
+    
+    <definition name="book" extends="base.definition">  
+        <put-attribute name="title" value="Book" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_book.jsp" />  
+    </definition> 
+    
+  <definition name="issue" extends="base.definition">  
+        <put-attribute name="title" value="Issue" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_issue.jsp" />  
+    </definition>
+    
+          <definition name="bookList" extends="base.definition">  
+        <put-attribute name="title" value="Book List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_bookList.jsp" />  
+    </definition> 
+    
+     <definition name="issueList" extends="base.definition">  
+        <put-attribute name="title" value="Issue List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_issueList.jsp" />  
+    </definition> 
+    
+     <definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition> 
+    
+    <definition name="signUp" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_registration.jsp" />  
+    </definition> 
+    
+   
+    
+    
+    
+    
+     
+   
+    
+    
+    
+     <definition name="myprofile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition>
+    
+     <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>
+    
+     
+    
+    
+     
+    
+     <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+  
+</tiles-definitions> 
